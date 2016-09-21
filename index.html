@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="notif">
+  <head>
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>HackGT Notifications Page</title>
+    <meta name="author" content="HackGT">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="https://fonts.googleapis.com/css?family=Advent+Pro:400,600|Lato" rel="stylesheet">
+    <link rel="stylesheet" href="build/ui.min.css">
+    <link rel='stylesheet' href='build/app.min.css' />
+    <link rel='stylesheet' href='build/style.css' />
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
+
+    <!-- JavaScript/JQuery
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  </head>
+  <body ng-controller="AppController">
+
+    <div class="container-fluid">
+      <div class="title col-md-12">
+        <img src="./assets/logo.png" id="logo">
+        <h1>Hack<strong>GT</strong></h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="col-md-1"></div>
+
+      <div class="col-md-6">
+        <div class="notifications">
+          <h2>Notifications</h2>
+          <div class="card" ng-repeat="notif in notifs" ng-if="notif">
+            <div class="cardType"><img src="./assets/{{(notif.type).toLowerCase()}}.svg"></div>
+            <h1 id="card-title">{{notif.title}}</h1>
+            <p>{{notif.description}}</p>
+            <p id="timestamp">{{notif.date | date:'shortTime'}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h2>Schedule</h2>
+        <h2>Social</h2>
+        <h2>Prizes</h2>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+
+
+    <script src="build/angulars.min.js"></script>
+    <script src="build/app.min.js"></script>
+    <script src="build/ui.min.js"></script>
+  </body>
+</html>
