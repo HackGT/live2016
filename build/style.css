@@ -40,7 +40,7 @@ body {
     overflow-y: scroll;
 }*/
 
-.card:first-child {
+.notifications .card:first-child {
     transform: scale(1);
     margin-bottom: 10px;
     font-size: 18px;
@@ -48,11 +48,11 @@ body {
     padding: 10px 15px;
 }
 
-.card:first-child #card-title {
+.notifications .card:first-child #card-title {
     font-size: 30px;
 }
 
-.card:first-child:hover {
+.notifications .card:first-child:hover {
     transform: scale(1.03);
 }
 
@@ -163,3 +163,22 @@ body {
     width: 100%;
     max-width: 1200px;
 }
+
+.prize h3 {
+    font-size: 20px;
+    margin: 5px;
+}
+
+.prize p {
+    font-size: 12px;
+}
+
+.prize {
+    padding: 5px 10px;
+}
+
+.prize:nth-child(2n-1) {
+    background: #eee;
+}
+
+

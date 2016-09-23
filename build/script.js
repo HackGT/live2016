@@ -41,7 +41,8 @@
       "domId": 'social',
       "maxTweets": 5,
       "enableLinks": true,
-      "showImages": true
+      "showImages": true,
+      "showInteraction": false
     };
 
     twitterFetcher.fetch(config3);

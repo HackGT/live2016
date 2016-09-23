@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Advent+Pro:400,600|Lato" rel="stylesheet">
     <link rel="stylesheet" href="build/ui.min.css">
     <link rel='stylesheet' href='build/style.css' />
+    <!-- <link rel="stylesheet" href="build/nerveSlider.min.css"> -->
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -33,7 +34,6 @@
       <div class="col-md-4">
         <div class="title">
           <img src="./assets/HackGTLogo.png" id="logo">
-          <!-- <h1>Hack<strong>GT</strong></h1> -->
         </div>
         <div class="notifications">
           <div class="card" ng-repeat="notif in notifs" ng-if="notif">
@@ -53,12 +53,6 @@
             <h1 id="card-title">HackGT Tech Talk: Intro To Hackathons</h1>
             <p>The Intro to Hackathons Tech Talk is happening NOW in Klaus 123. Head over to learn more about hackathons!</p>
             <p id="timestamp">6:15 PM</p>
-          </div>
-          <div class="card">
-            <div class="cardType"><img src="./assets/emergency.svg"></div>
-            <h1 id="card-title">No Fire</h1>
-            <p>The fire alarm went off but the space is cleared and there is no fire.</p>
-            <p id="timestamp">5:23 PM</p>
           </div> -->
         </div>
         <div class="card">
@@ -68,13 +62,11 @@
             <p>Stay updated on all things HackGT! Join our Slack channel to communicate with other hackers, get matched with mentors, and ask questions to sponsors.</p>
           </a>
         </div>
-        <!-- <div class="card">
-          <a href="https://slackgt.slack.com" target="_blank">
-            <div class="cardType"><img src="./assets/general.svg"></div>
-            <h1 id="card-title">Get Connected</h1>
-            <p>How to connect to the WiFi: The code for the WiFi is X95B5</p>
-          </a>
-        </div> -->
+        <div class="card">
+          <div class="cardType"><img src="./assets/general.svg"></div>
+          <h1 id="card-title">Get Connected</h1>
+          <p>Not a GT Student? The code for the WiFi is X95B5</p>
+        </div>
       </div>
       <div class="col-md-4">
         <!-- <div class="scheduleBlock">
@@ -132,6 +124,60 @@
           </table>
         </div>
         <h2>Prizes</h2> -->
+        <div id="prizes" class="card" style="padding: 0; transform: scale(0.98);">
+          <div class="cardType"><img src="./assets/event.svg"></div>
+          <h1 id="card-title">The Prizes</h1>
+          <div class="prize">
+            <img src="./assets/logo.png">
+            <h3>Top Three Hacks</h3>
+            <p><strong>WIN: </strong>AERIUS World’s Smallest Quadcopter, Boogie Board Jot 8.5, Tile Gen 2, Logitech X100 Buetooth Speaker, and a Google Cardboard</p>
+          </div>
+          <div class="prize">
+            <img src="./assets/logo.png">
+            <h3>Rube Goldberg Hack</h3>
+            <p><strong>WIN: </strong>Captain Jules's Useless Box</p>
+          </div>
+          <div class="prize">
+            <img src="https://logo.clearbit.com/gm.com">
+            <h3>Best Auto Hack</h3>
+            <p><strong>WIN: </strong>Weekend Trip to NY to Visit the Cadillac House</p>
+          </div>
+          <div class="prize">
+            <img src="https://logo.clearbit.com/microsoft.com">
+            <h3>Best Microsoft Hack</h3>
+            <p><strong>WIN: </strong>Surface Pro 4s plus typecover</p>
+          </div>
+          <div class="prize">
+            <img src="https://logo.clearbit.com/goldmansachs.com">
+            <h3>Best User Experience (UX) Award</h3>
+            <p><strong>WIN: </strong>Bose speakers</p>
+          </div>
+          <div class="prize">
+            <img src="https://logo.clearbit.com/delta.com">
+            <h3>Best Air Travel Solutions</h3>
+            <p>Hack around Air travel<br><strong>1st: </strong>Confirmed Domestic Round-trip Ticket in Delta Network for Each Team Member<br><strong>2nd: </strong>$100 Delta Gift Card for Each Team Member<br><strong>3rd: </strong>$50 Delta Gift Card for Each Team Member</p>
+          </div>
+          <div class="prize">
+            <img src="https://logo.clearbit.com/delta.com">
+            <h3>Best Corporate Customer Travel Experience</h3>
+            <p>Hack around Air travel Corporate Customer<br><strong>WIN: </strong>Confirmed Domestic Round-trip Ticket in Delta Network for Each Team Member</p>
+          </div>
+          <div class="prize">
+            <img src="https://hackgt.com/img/sponsors/tanvas.jpg">
+            <h3>Most innovative use of TanvasTouch in a digital experience</h3>
+            <p><strong>WIN: </strong>Remote drone with an HD camera along with early access to the Tanvas developer kit</p>
+          </div>
+          <div class="prize">
+            <img src="https://logo.clearbit.com/ionic.com">
+            <h3>Best Use of Encryption</h3>
+            <p>(Must use encryption in your hack)<br><strong>WIN: </strong>Backpacks and $100 per team member</p>
+          </div>
+          <div class="prize">
+            <img src="https://hackgt.com/img/sponsors/gtlyfe.png">
+            <h3>Most complete, easy to implement with existing technologies solution</h3>
+            <p><strong>WIN: </strong>Cool electronics such as an Apple TV, headphones, a Fitbit, etc. along with internship opportunities</p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -140,5 +186,15 @@
     <script src="build/app.min.js"></script>
     <script src="build/ui.min.js"></script>
     <script src="build/script.js"></script>
+    <!-- <script src="build/jquery.nerveSlider.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("#prizes").nerveSlider({
+        sliderWidth: "100%",
+        sliderHeight: "400px"
+      });
+    });
+    </script> -->
+
   </body>
 </html>
