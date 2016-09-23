@@ -1,7 +1,165 @@
+@charset "utf-8";
+
+*, :after, :before {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html {
+    height: 75%
+}
+
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background: url(../assets/mountains.jpg) bottom center no-repeat #969a9d;
+    background-size: cover;
+}
+
+.card h1, .title h1 {
+    font-family: "Advent Pro", sans-serif
+}
+
+.title {
+    margin: 50px 0 15px;
+}
+
+.title h1 {
+    color: #123d58;
+    font-size: 50px;
+    margin: 0
+}
+
+.title img#logo {
+    max-width: 75%;
+    max-height: 200px;
+}
+
+/*.notifications {
+    max-height: 1500px;
+    overflow-y: scroll;
+}*/
+
+.card:first-child {
+    transform: scale(1);
+    margin-bottom: 10px;
+    font-size: 18px;
+    min-height: 275px;
+    padding: 10px 15px;
+}
+
+.card:first-child #card-title {
+    font-size: 30px;
+}
+
+.card:first-child:hover {
+    transform: scale(1.03);
+}
+
 .card {
-    box-shadow: none;
+    position: relative;
+    padding: 10px;
+    background-color: #fff;
+    /*background-image: url('../assets/watercolor.png');*/
     margin: 0;
+    margin-bottom: 5px;
     width: 100%;
     height: auto;
     min-height: 200px;
+}
+
+.card a {
+    color: inherit;
+}
+
+.card a:hover {
+    text-decoration: none;
+}
+
+.card, #social ul li {
+    transform: scale(.95);
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.card:hover, #social ul li:hover {
+    transform: scale(0.98);
+    opacity: 1;
+}
+
+.card h1 {
+    font-size: 25px;
+    margin: 10px 0
+}
+
+.card p {
+    font-size: 1em;
+    opacity: .9
+}
+
+.card img {
+    height: 50px;
+    margin-top: 10px
+}
+
+.card, .card #timestamp, .title {
+    display: block;
+    text-align: center
+}
+
+.card, .card #timestamp, .card h1, .title {
+    text-align: center
+}
+
+
+.card #timestamp {
+    position: absolute;
+    bottom: 0;
+    font-size: .85em;
+    color: #000;
+    opacity: .5;
+    width: 100%;
+    margin-left: -10px
+}
+
+#social {
+    padding-top: 50px;
+}
+
+#social ul {
+    list-style: none;
+    padding: 0;
+}
+
+#social ul li {
+    background: #fff;
+    text-align: center;
+    padding: 10px;
+    opacity: .85;
+    font-size: 15px;
+}
+
+#social ul li .media img {
+    max-height: 300px;
+    max-width: 100%;
+}
+
+#social ul li .interact {
+    display: none;
+}
+
+#social ul li .timePosted {
+    display: none;
+}
+
+#social ul li .user img {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
 }

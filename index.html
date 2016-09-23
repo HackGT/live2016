@@ -12,7 +12,6 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link href="https://fonts.googleapis.com/css?family=Advent+Pro:400,600|Lato" rel="stylesheet">
     <link rel="stylesheet" href="build/ui.min.css">
-    <link rel='stylesheet' href='build/app.min.css' />
     <link rel='stylesheet' href='build/style.css' />
 
     <!-- Favicon
@@ -25,37 +24,121 @@
   <body ng-controller="AppController">
 
     <div class="container-fluid">
-      <div class="title col-md-12">
-        <img src="./assets/logo.png" id="logo">
-        <h1>Hack<strong>GT</strong></h1>
-      </div>
     </div>
 
     <div class="container">
-      <div class="col-md-1"></div>
-
-      <div class="col-md-6">
+      <div class="col-md-4">
+        <div id="social"></div>
+      </div>
+      <div class="col-md-4">
+        <div class="title">
+          <img src="./assets/HackGTLogo.png" id="logo">
+          <!-- <h1>Hack<strong>GT</strong></h1> -->
+        </div>
         <div class="notifications">
-          <h2>Notifications</h2>
           <div class="card" ng-repeat="notif in notifs" ng-if="notif">
             <div class="cardType"><img src="./assets/{{(notif.type).toLowerCase()}}.svg"></div>
             <h1 id="card-title">{{notif.title}}</h1>
             <p>{{notif.description}}</p>
             <p id="timestamp">{{notif.date | date:'shortTime'}}</p>
           </div>
+          <!-- <div class="card">
+            <div class="cardType"><img src="./assets/food.svg"></div>
+            <h1 id="card-title">Dinner is served!</h1>
+            <p>Bollywood Zing is here. If you're hungry, head over to the food area.</p>
+            <p id="timestamp">7:28 PM</p>
+          </div>
+          <div class="card">
+            <div class="cardType"><img src="./assets/event.svg"></div>
+            <h1 id="card-title">HackGT Tech Talk: Intro To Hackathons</h1>
+            <p>The Intro to Hackathons Tech Talk is happening NOW in Klaus 123. Head over to learn more about hackathons!</p>
+            <p id="timestamp">6:15 PM</p>
+          </div>
+          <div class="card">
+            <div class="cardType"><img src="./assets/emergency.svg"></div>
+            <h1 id="card-title">No Fire</h1>
+            <p>The fire alarm went off but the space is cleared and there is no fire.</p>
+            <p id="timestamp">5:23 PM</p>
+          </div> -->
         </div>
+        <div class="card">
+          <a href="https://slackgt.slack.com" target="_blank">
+            <div class="cardType"><img src="./assets/slack.png"></div>
+            <h1 id="card-title">SlackGT</h1>
+            <p>Stay updated on all things HackGT! Join our Slack channel to communicate with other hackers, get matched with mentors, and ask questions to sponsors.</p>
+          </a>
+        </div>
+        <!-- <div class="card">
+          <a href="https://slackgt.slack.com" target="_blank">
+            <div class="cardType"><img src="./assets/general.svg"></div>
+            <h1 id="card-title">Get Connected</h1>
+            <p>How to connect to the WiFi: The code for the WiFi is X95B5</p>
+          </a>
+        </div> -->
       </div>
       <div class="col-md-4">
-        <h2>Schedule</h2>
-        <h2>Social</h2>
-        <h2>Prizes</h2>
+        <!-- <div class="scheduleBlock">
+          <table>
+            <thead><tr><td colspan="2">Friday, September 23</td></tr></thead>
+            <tbody>
+              <tr><td>9:30p</td><td>Opening Ceremony</td></tr>
+              <tr><td>11:00p</td><td>Let's get hacking!</td></tr>
+              <tr><td>11:00p</td><td>Sponsor Expo</td></tr>
+              <tr><td>11:30p</td><td>Team Mixer</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="scheduleBlock">
+          <table>
+            <thead><tr><td colspan="2">Saturday, September 24</td></tr></thead>
+            <tbody>
+              <tr><td>12:00a</td><td>Midnight Snack</td></tr>
+              <tr><td>12:30a</td><td>GM Tech Talk - Polymer</td></tr>
+              <tr><td>12:30a</td><td>Intro to Hackathons - Tech Talk</td></tr>
+              <tr><td>1:30a</td><td>Microsoft Tech Talk - Data Science and Machine Learning in Spark</td></tr>
+              <tr><td>1:30a</td><td>GE Digital Tech Talk</td></tr>
+              <tr><td>2:30a</td><td>Macy's Tech Talk</td></tr>
+              <tr><td>3:30a</td><td>Silent Disco</td></tr>
+              <tr><td>7:00a</td><td>Breakfast (Sun in My Belly)</td></tr>
+              <tr><td>9:00a</td><td>Blackrock Tech Talk- Apache Ignite</td></tr>
+              <tr><td>9:00a</td><td>a16z Tech Talk</td></tr>
+              <tr><td>10:30a</td><td>Meditation</td></tr>
+              <tr><td>12:00p</td><td>Lunch (Pita Pit)</td></tr>
+              <tr><td>1:30p</td><td>Delta Tech Talk - Fly Delta App and Delta Data Analysis</td></tr>
+              <tr><td>1:30p</td><td>Qualtrics Tech Talk</td></tr>
+              <tr><td>3:00p</td><td>Yoga</td></tr>
+              <tr><td>3:30p</td><td>Lunch, again! (Loaded Burgers)</td></tr>
+              <tr><td>4:30p</td><td>Airwatch Tech Talk - Mobility and Scalability</td></tr>
+              <tr><td>5:00p</td><td>Dinner (Matt's Ribs)</td></tr>
+              <tr><td>5:30p</td><td>Werewolf</td></tr>
+              <tr><td>7:00p</td><td>Poetry Slam</td></tr>
+              <tr><td>8:00p</td><td>Dinner, again! (Bollywood Zing)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="scheduleBlock">
+          <table>
+            <thead><tr><td colspan="2">Sunday, September 25</td></tr></thead>
+            <tbody>
+              <tr><td>12:00a</td><td>King of Pops!</td></tr>
+              <tr><td>3:00a</td><td>Insomnia Cookies</td></tr>
+              <tr><td>6:00a</td><td>Sublime Donuts</td></tr>
+              <tr><td>7:30a</td><td>Breakfast (Nana G's)</td></tr>
+              <tr><td>9:00a</td><td>Hacking ends!</td></tr>
+              <tr><td>10:00a</td><td>Expo and Judging</td></tr>
+              <tr><td>12:00p</td><td>Lunch (Tempted Palate)</td></tr>
+              <tr><td>2:00p</td><td>Closing ceremonies</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h2>Prizes</h2> -->
       </div>
-      <div class="col-md-1"></div>
     </div>
 
 
     <script src="build/angulars.min.js"></script>
     <script src="build/app.min.js"></script>
     <script src="build/ui.min.js"></script>
+    <script src="build/script.js"></script>
   </body>
 </html>
