@@ -55,3 +55,35 @@
 
 //   <a class="twitter-timeline"  href="https://twitter.com/hashtag/HackGT" data-widget-id="779130176311558144">#HackGT Tweets</a>
 //   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+clock();
+
+function clock() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    // var s = today.getSeconds();
+    m = checkTime(m);
+    // s = checkTime(s);
+    document.getElementById('clock').innerHTML = h + ":" + m;
+    var t = setTimeout(clock, 60000);
+    var weekday = new Array(7);
+    weekday[0]=  "Sunday";
+    weekday[1] = "Monday";
+    weekday[2] = "Tuesday";
+    weekday[3] = "Wednesday";
+    weekday[4] = "Thursday";
+    weekday[5] = "Friday";
+    weekday[6] = "Saturday";
+    document.getElementById('day').innerHTML = weekday[today.getDay()];
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+
+
+
+
+
+
