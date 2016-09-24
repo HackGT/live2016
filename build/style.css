@@ -181,4 +181,39 @@ body {
     background: #eee;
 }
 
+.clock .time {font-family: 'Advent Pro';font-size: 50px;}
+
+.clock .day {font-family: 'Advent Pro';text-transform: uppercase;font-size: 25px;letter-spacing: 5px;}
+
+.clock {
+    padding: 10px;
+}
+
+.event {
+    text-align: left;
+    padding: 10px;
+    transition: all .3s;
+}
+
+.event:nth-child(odd) {
+    background: #eee;
+}
+
+.event:nth-child(even) {
+    background: rgba(250,250,250,1);
+}
+
+.event:hover {
+    background: #F44336;
+    color: #fff;
+}
+
+.event .time {
+    display: block;
+}
+
+.event .eventN {
+    font-size: 20px;
+    display: block;
+}
 
