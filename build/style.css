@@ -217,3 +217,10 @@ body {
     display: block;
 }
 
+
+@media screen and (max-width: 990px) {
+    #social {
+        display: none;
+    }    
+}
+
