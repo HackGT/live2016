@@ -231,6 +231,14 @@ span.button:hover {
     background: #2196F3;
 }
 
+a.pageA {
+    display: block;
+    margin: 5px 0;
+    text-align: center;
+    color: #fff;
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 990px) {
     #social {
         display: none;
