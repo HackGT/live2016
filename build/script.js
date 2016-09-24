@@ -39,7 +39,7 @@
     var config3 = {
       "id": '779130176311558144',
       "domId": 'social',
-      "maxTweets": 5,
+      "maxTweets": 20,
       "enableLinks": true,
       "showImages": true,
       "showInteraction": false
