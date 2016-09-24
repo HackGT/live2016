@@ -217,6 +217,19 @@ body {
     display: block;
 }
 
+span.button {
+    display: block;
+    margin: 5px auto;
+    width: 200px;
+    padding: 5px;
+    background: #03A9F4;
+    color: #fff;
+    transition: all .3s;
+}
+
+span.button:hover {
+    background: #2196F3;
+}
 
 @media screen and (max-width: 990px) {
     #social {
