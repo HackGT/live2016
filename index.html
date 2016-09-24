@@ -296,6 +296,17 @@
     <script src="build/app.min.js"></script>
     <script src="build/ui.min.js"></script>
     <script src="build/script.js"></script>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+    <script>
+      var OneSignal = window.OneSignal || [];
+      OneSignal.push(["init", {
+        appId: "b0ccd7fb-a123-40a5-8ff3-0da6e5248540",
+        autoRegister: true,
+        notifyButton: {
+          enable: true /* Set to false to hide */
+        }
+      }]);
+    </script>
     <!-- <script src="build/jquery.nerveSlider.min.js"></script>
     <script>
     $(document).ready(function(){
